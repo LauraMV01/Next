@@ -1,4 +1,4 @@
-import { inter } from './ui/fonts';
+import { inter } from '@/app/ui/fonts';
 import '@/app/ui/global.css';
 import { sql } from '@vercel/postgres';
 
