@@ -1,3 +1,7 @@
+import { inter } from './ui/fonts';
+import '@/app/ui/global.css';
+import { sql } from '@vercel/postgres';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        layout
+        {children}
+        <footer className='flex justify-center items-center py-10'>
+          hecho con mucho amor
+        </footer>
+      </body>
     </html>
   );
 }
